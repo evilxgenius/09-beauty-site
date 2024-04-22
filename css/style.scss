@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  min-width: 1110px;
+
+  .menu {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+
+  .header__menu-level-1 {
+    padding: 16px 0 17px 0;
+    font-size: 14px;
+    background-color: #EFEFEF;
+
+    .menu__item--level-1 {
+      margin-inline: 30px;
+      color: #333333;
+    }
+  }
+
+  .header__menu-level-2 {
+    border-top: 1px solid #EFEFEF;
+    padding: 30px 0;
+    font-size: 14px;
+
+    .menu__item--level-2 {
+      margin-inline: 40px;
+      color: black;
+    }
+  }
+
+  .logo {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 258px;
+    margin: 20px 0 20px 21%;
+    vertical-align: middle;
+
+    &__text {
+      color: #F13C6E;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .callback {
+    display: inline-flex;
+    align-items: center;
+    margin: 40px 0 40px 27%;
+    text-wrap: nowrap;
+
+    &__action {
+      width: 170px;
+      margin-left: 40px;
+      border: 2px solid #F13C6E;
+      border-radius: 40px;
+      padding: 12px 26px 13px 27px;
+      background-color: transparent;
+      font-size: 14px;
+    }
+  }
+
+  .jumbotron {
+    background-image: url('../images/jumbotron.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 192px 0 193px 21%;
+
+    &__container {
+      width: 308px;
+    }
+
+    &__headline {
+      margin-bottom: 50px;
+      color: white;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    &__text {
+      margin-bottom: 32px;
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__action {
+      width: 170px;
+      border: 2px solid #FFFFFF;
+      border-radius: 40px;
+      padding: 12px 26px 13px 27px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: transparent;
+    }
+  }
+}

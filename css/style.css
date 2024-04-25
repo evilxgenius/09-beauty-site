@@ -36,7 +36,7 @@
   justify-content: space-between;
   column-gap: 20px;
 }
-.container .company .social__item {
+.container .company .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +63,10 @@
   background-color: transparent;
   font-size: 0.87rem;
   text-align: center;
+  color: black;
+}
+.container .company .callback__action:hover {
+  cursor: pointer;
 }
 .container .header .menu {
   display: flex;
@@ -112,6 +116,7 @@
   font-weight: 400;
 }
 .container .header .jumbotron__action {
+  display: block;
   width: 170px;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
@@ -221,6 +226,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   background-color: transparent;
+  color: white;
 }
 .container .main .cards .card__logo {
   display: flex;
@@ -240,13 +246,13 @@
   gap: 1px;
   margin: 100px 0 80px;
 }
-.container .main .brands__logo-wrap {
+.container .main .brands__item {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
 }
-.container .main .brands__logo {
+.container .main .brands__image {
   width: 149px;
 }
 .container .footer {
@@ -270,7 +276,7 @@
   border-top: 1px solid #EFEFEF;
   padding-top: 25px;
 }
-.container .footer .categories .category__item {
+.container .footer .categories .category__link {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 28px;
@@ -287,7 +293,6 @@
   color: #828282;
 }
 .container .footer .policy__link {
-  text-decoration: none;
   color: inherit;
 }
 

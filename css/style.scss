@@ -39,7 +39,7 @@
       justify-content: space-between;
       column-gap: 20px;
 
-      &__item {
+      &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,6 +69,11 @@
         background-color: transparent;
         font-size: 0.87rem;
         text-align: center;
+        color: black;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -132,6 +137,7 @@
       }
 
       &__action {
+        display: block;
         width: 170px;
         border: 2px solid #FFFFFF;
         border-radius: 40px;
@@ -258,6 +264,7 @@
           letter-spacing: 0.05em;
           text-align: center;
           background-color: transparent;
+          color: white;
         }
 
         &__logo {
@@ -283,14 +290,14 @@
       gap: 1px;
       margin: 100px 0 80px;
 
-      &__logo-wrap {
+      &__item {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
       }
 
-      &__logo {
+      &__image {
         width: 149px;
       }
     }
@@ -306,7 +313,6 @@
       padding: 60px 20%;
 
       .category {
-
         &__header {
           width: 100px;
           padding-bottom: 30px;
@@ -321,7 +327,7 @@
           padding-top: 25px;
         }
 
-        &__item {
+        &__link {
           font-size: 0.75rem;
           font-weight: 400;
           line-height: 28px;
@@ -341,7 +347,6 @@
       color: #828282;
 
       &__link {
-        text-decoration: none;
         color: inherit;
       }
     }

@@ -12,6 +12,67 @@
 .container {
   min-width: 1110px;
 
+  .company {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20%;
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 258px;
+      vertical-align: middle;
+
+      &__text {
+        color: #F13C6E;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #F13C6E;
+        border-radius: 50%;
+      }
+
+      &__image {
+        display: block;
+        max-width: 22px;
+        max-height: 22px;
+      }
+    }
+
+    .callback {
+      display: flex;
+      align-items: center;
+
+      &__action {
+        width: 170px;
+        margin-left: 40px;
+        border: 2px solid #F13C6E;
+        border-radius: 40px;
+        padding: 12px 26px 13px 27px;
+        background-color: transparent;
+        font-size: 0.87rem;
+        text-align: center;
+      }
+    }
+  }
+
   .header {
     .menu {
       display: flex;
@@ -24,7 +85,7 @@
 
     &__menu-level-1 {
       padding: 16px 0 17px 0;
-      font-size: 14px;
+      font-size: 0.87rem;
       background-color: #EFEFEF;
 
       .menu__item--level-1 {
@@ -36,46 +97,11 @@
     &__menu-level-2 {
       border-top: 1px solid #EFEFEF;
       padding: 30px 0;
-      font-size: 14px;
+      font-size: 0.87rem;
 
       .menu__item--level-2 {
         margin-inline: 40px;
         color: black;
-      }
-    }
-
-    .logo {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 258px;
-      margin: 20px 0 20px 20%;
-      vertical-align: middle;
-
-      &__text {
-        color: #F13C6E;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        letter-spacing: 0.1em;
-      }
-    }
-
-    .callback {
-      display: inline-flex;
-      align-items: center;
-      margin: 40px 0 40px 27%;
-      text-wrap: nowrap;
-
-      &__action {
-        width: 170px;
-        margin-left: 40px;
-        border: 2px solid #F13C6E;
-        border-radius: 40px;
-        padding: 12px 26px 13px 27px;
-        background-color: transparent;
-        font-size: 14px;
       }
     }
 
@@ -94,14 +120,14 @@
         margin-bottom: 50px;
         color: white;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 3rem;
         line-height: 56px;
       }
 
       &__text {
         margin-bottom: 32px;
         color: white;
-        font-size: 14px;
+        font-size: 0.87rem;
         font-weight: 400;
       }
 
@@ -110,7 +136,7 @@
         border: 2px solid #FFFFFF;
         border-radius: 40px;
         padding: 12px 26px 13px 27px;
-        font-size: 14px;
+        font-size: 0.87rem;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0.05em;
@@ -122,14 +148,14 @@
   }
 
   .main {
+    padding: 80px 20%;
     background-color: #EFEFEF;
 
     .offer, .viewed {
-      padding: 80px 20% 100px;
 
       &__headline {
         padding-bottom: 38px;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
         line-height: 28.13px;
       }
@@ -153,7 +179,7 @@
 
         &__description {
           margin-bottom: 20px;
-          font-size: 14px;
+          font-size: 0.87rem;
           font-weight: 400;
           line-height: 19.69px;
           text-align: center;
@@ -162,7 +188,7 @@
 
         &__price {
           margin-bottom: 20px;
-          font-size: 21px;
+          font-size: 1.31rem;
           font-weight: 500;
           line-height: 24.61px;
           letter-spacing: 0.05em;
@@ -181,10 +207,10 @@
     }
 
     .cards {
-      margin: 0 20%;
       display: grid;
       grid-template-columns: repeat(2, calc(50% - 15px));
       column-gap: 30px;
+      margin-top: 100px;
 
       .card {
         display: flex;
@@ -195,7 +221,7 @@
 
         &__headline {
           margin-bottom: 25px;
-          font-size: 18px;
+          font-size: 1.12rem;
           font-weight: 700;
           line-height: 21.09px;
         }
@@ -203,7 +229,7 @@
         &__description {
           width: 60%;
           margin-bottom: 25px;
-          font-size: 14px;
+          font-size: 0.87rem;
           font-weight: 400;
           line-height: 19.69px;
           text-align: left;
@@ -226,7 +252,7 @@
           border: 2px solid #FFFFFF;
           border-radius: 30px;
           padding: 9px;
-          font-size: 14px;
+          font-size: 0.87rem;
           font-weight: 400;
           line-height: 16px;
           letter-spacing: 0.05em;
@@ -254,12 +280,69 @@
       display: grid;
       grid-template-rows: repeat(3, 119px);
       grid-template-columns: repeat(4, 1fr);
-      justify-items: center;
-      align-items: center;
-      margin: 0 20%;
+      gap: 1px;
+      margin: 100px 0 80px;
+
+      &__logo-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
 
       &__logo {
         width: 149px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: white;
+
+    .categories {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #EFEFEF;
+      padding: 60px 20%;
+
+      .category {
+
+        &__header {
+          width: 100px;
+          padding-bottom: 30px;
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 22.5px;
+        }
+
+        &__list {
+          width: 255px;
+          border-top: 1px solid #EFEFEF;
+          padding-top: 25px;
+        }
+
+        &__item {
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 28px;
+          color: #828282;
+        }
+      }
+    }
+
+    .policy {
+      display: flex;
+      justify-content: space-between;
+      background-color: #EFEFEF;
+      padding: 25px 20%;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 14.06px;
+      color: #828282;
+
+      &__link {
+        text-decoration: none;
+        color: inherit;
       }
     }
   }
